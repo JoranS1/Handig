@@ -1,0 +1,251 @@
+*{
+	margin:0;
+	padding:0;
+	
+}
+body{
+
+	font-family: 'Archivo', sans-serif;
+}
+
+
+.gridcontainer{
+
+	display: grid;
+	grid-template-columns: auto 900px auto;
+	grid-template-rows: auto auto auto 30px;
+}
+header{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	padding-left: 30px;
+	}
+nav{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+nav > ul{
+	background-color: black;
+	width: 950px;
+	height: 40px;
+
+}
+nav > ul > li{
+	font-size: 12px;
+	display: inline-block;
+	color: white;
+	padding-left: 30px;
+
+
+}
+nav > ul > li > i{
+	width: 12px;
+	height: 12px;
+	color: white;
+
+}
+nav > ul > li > a{
+	font-size: 12px;
+	text-decoration: none;
+	color:white;
+	
+}
+nav > ul > li > a:hover{
+	font-size: 12px;
+	text-decoration: none;
+	background-color: yellow;
+	color:black;
+	
+}
+.groot{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.groot > img{
+	padding-top: 25px;
+	width: 100%;
+	height: 500px;
+}
+.banner{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	text-align: center;
+	display: inline;
+}
+.banner > img{
+	padding: 50px 10px;
+}
+.geel{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	background-color: yellow;
+	height: 130px;
+	margin-top: 320px;
+	position: relative;
+}
+.geel > h1{
+	margin-top: 46px;
+	font-size: 40px;
+	margin-left:180px;
+	margin-right: 20px;
+	position: absolute;
+}
+.geel > p{
+	font-size: 15px;
+	margin-left: 660px;
+	position: absolute;
+	margin-top: 70px;
+}
+.geel > button{
+	font-size: 15px;
+	margin-left: 1060px;
+	position: absolute;
+	margin-top: 50px;
+	padding: 10px 40px;
+	background-color: white;
+}
+.voeter{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	margin-top: calc(320px + 125px + 50px);
+}
+.voeter > img{
+	width: 100%;
+	height: 250px;
+}
+.informatie{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	margin-top: calc(320px + 125px + 50px + 246px - 46px);
+	text-align: center;
+	position: relative;
+}
+.informatie > li{
+	padding-bottom: 75px;
+	padding-right: 300px;
+	background-color: yellow;
+	display: inline;
+	margin:20px;
+}
+.informatie > li > i{
+	position: absolute;
+	font-size: 74px;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+.informatie  > li:nth-of-type(1) > h3{
+	position: absolute;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-left: 405px;
+}
+.informatie  > li:nth-of-type(1) > p{
+	position: absolute;
+	font-size: 14px;
+	margin-top: 50px;
+	margin-left: 405px;
+}
+.informatie > li:nth-of-type(2) > h3{
+	position: absolute;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-left: calc(405px + 320px);
+}
+.informatie > li:nth-of-type(2) > p{
+	position: absolute;
+	font-size: 14px;
+	margin-top: 50px;
+	margin-left: calc(405px + 320px);
+}
+.informatie > li:nth-of-type(3) > h3{
+	position: absolute;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-left: calc(405px + 320px + 340px);
+}
+.informatie > li:nth-of-type(3) > p{
+	position: absolute;
+	font-size: 14px;
+	margin-top: 50px;
+	margin-left: calc(405px + 320px + 340px);
+}
+.ons{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	position: relative;
+}
+.ons > h2{
+	font-size: 20px;
+	margin-top: calc(320px + 130px + 50px + 250px + 200px);
+	padding-bottom: 30px;
+	margin-left: 18%;
+}
+.ons > p{
+	font-size: 20px;
+	display: block;
+	width: 370px;
+	height: 300px;
+	margin-left: 18%;
+}
+
+.contact{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.contact > h3{
+	font-size: 18px;
+	margin-top: calc(320px + 130px + 50px + 250px + 200px);
+	padding-bottom: 30px;
+	margin-left: 63%
+}
+.contact > i{
+	float:left;
+	color:grey;
+	margin-left: 63%;
+	margin-bottom: 10px;
+	clear:left;
+}
+.contact > p{
+	margin-left: 66%;
+	margin-bottom: 30px;
+
+}
+footer{
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	background-color: black;
+	height: 30px
+}
+footer > p{
+	color:white;
+	font-size: 10px;
+	text-align: right;
+}
+.dienstje{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	text-align: center;
+	display: inline;
+}
